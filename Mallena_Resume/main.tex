@@ -1,0 +1,355 @@
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \text{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeJournels}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.90\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Mallena Vardhan} % Your Name
+\newcommand{\course}{Bachelor in technology} % Your Program
+\newcommand{\roll}{2301123} % Your Roll No.
+\newcommand{\phone}{9476062388} % Your Phone Number
+\newcommand{\emaila}{vardhanmallena@gmail.com} %Email 1
+\newcommand{\emailb}{mallena.vardhan23b@iiitg.ac.in} %Email 2
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+
+\parbox{2.35cm}{%
+\includegraphics[width=2cm,clip]{iiitgLogo.png}
+}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +91-\phone}\\
+  {Roll No.: \roll} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  \course &  \href{mailto:\emailb}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emailb}}\\
+  {Electronics and Communication Engineering}  &  \href{https://github.com/mVardhan2388}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {Vardhan Mallena}} \\
+  {Indian Institute Of Information Technology, Guwahati} & \href{www.linkedin.com/in/mallena-vardhan-7a15782a3}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {Mallena Vardhan}}
+\end{tabularx}
+}
+
+
+%-----------EDUCATION-----------
+\section{\textbf{\Large Education}}
+\vspace{-1mm}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology, Guwahati}{CGPA: 7.89}
+      {Btech, ECE}{2027}
+    \resumeSubheading
+      {Sri Chaitanya Vidya Niketan, Vishakhapatnam}{Percentage: 91.6}
+      {CBSE}{2023}
+    \resumeSubheading
+      {Dr KKR's Gowtham School, Vishakhapatnam}{Percentage: 87.6}
+      {CBSE}{2021}
+  \resumeSubHeadingListEnd
+\vspace{-4.5mm}
+%
+
+%-----------INTERSHIP-----------------
+\section{\textbf{\Large Internship}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      {Department of Avionics, Indian Institute of Space Science and Technology \hfill \href{https://github.com/mVardhan2388/Containment_control_mas/tree/main}{\faGithub}}
+      {Containment Control of Multi-Agent Systems and ensuring Differential Privacy}
+      %Project Name, Location Name
+      {June - July, 2025} %Event Dates
+      {Prof Sourav Bhowmick}
+      
+      
+      
+      
+    \resumeItemListStart
+    \item {Simulated the research framework considering 4 leaders and 4 followers using $(4 \times 4) \times 3$ adjacency matrices.}
+    \item {Built a randomized MATLAB simulator to validate Theorems 1, 2, and 3 under complex assumptions mentioned. }
+    \item {Verified containment of followers within convex hull created by leaders and ensured differential privacy.}
+    \item {Planned hardware implementation using drones and Gazebo for real-time simulation, and extending the work with data encryption for secure communication between the agents.}
+
+\resumeItemListEnd
+    \vspace{-3.5mm}
+
+  \resumeSubHeadingListEnd
+\vspace{-4.5mm}
+
+
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{\Large Projects}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      {Automation of Refractory Gas Burners (IMC/2020/000015) \hfill \href{https://github.com/mVardhan2388/Automation_of_Gas_Stove}{\faGithub}}
+      {Indian Institute of Information Technology Guwahati.}
+      {December,2024 - Ongoing}%Event Dates
+      {Prof Sudip Biswas}
+      %Project Name, Location Name
+      
+      
+      
+      \resumeItemListStart
+  \item {Simulated real-time gas flow dynamics from cylinder to burner with {±3\%} accuracy. Considering the Ideal case.}
+  \item {Built a digital twin in Simulink using gas flow equations with {0.01s} time steps and {1000+ iterations}.}
+  \item {Designed a Matlab GUI for tuning parameter flow rate (0–50 L/min) and monitoring temperature (0–450 °C).}
+  \item {In progress: Hardware setup with flow meters, actuators, and {Raspberry Pi 5}, integrating with {AWS IoT Core}. and extending capabilities to {IIoT 4.0}.}
+\resumeItemListEnd
+    \vspace{-2.5mm}
+
+    \resumeProject
+  {Gesture Controlled Robot \hfill \href{https://github.com/mVardhan2388/Gesture_controlled_robot}{\faGithub}}
+  {Indian Institute of Information Technology Guwahati}
+  {September, 2024}
+  {Robotics Club, IIITG}
+
+\resumeItemListStart
+  \item {Designed and built a robot using L298N motor driver, DC motors, and Arduino UNO for motor control}
+  \item {Implemented gesture-based controller by integrating an ADXL335 accelerometer with an Arduino Nano module.}
+  \item {Established wireless communication using RF433 MHz transmitter-receiver modules to send data to the robot.}
+  \item {Tested and validated the system for smooth and responsive gesture-based operation within a fixed range of values mapped by the accelerometer data.}
+\resumeItemListEnd
+
+    \vspace{-3.5mm}
+
+  \resumeSubHeadingListEnd
+\vspace{-4.5mm}
+
+%-----------Journels-----------------
+\section{\textbf{\Large Journels}}
+\resumeSubHeadingListStart
+
+    {Sourav Bhowmick, Mallena Vardhan, Dennis Jobby, Deepak Misra,}
+    { "Multi-agent Containment Control with Differentially Private Schemes and Quantisation" (T-ASE-2025-2409),}
+      %Project Name, Location Name
+      { July 2025}%Event Dates
+      { (Under Review)}
+
+  \resumeSubHeadingListEnd
+\vspace{-4.5mm}
+
+
+
+
+%-----------Technical skills-----------------
+\section{\textbf{\Large Technical Skills and Interests}}
+\vspace{-4mm}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \item{
+     \resumePOR{Languages}{: C language, Java, Python, Arduino, Matlab } \\
+     
+     \resumePOR{Developer/ Simulator/ IOT Tools}{: CSS, Javascript, Git, Gazebo, Simulink, AWS IOT core } \\
+
+     \resumePOR{Coursework}{: \parbox[t]{15.5cm}{Digital Signal Processing, Principles of Communication, Signals and Systems, Digital Design, Operating Systems, IT Workshop, Computer Architecture, Data Structures}}
+
+     
+     \resumePOR{Areas of Interest}{: IIOT 4.0, Mechatronics, Robotics, Automation, Network and Communications Systems} \\
+     
+     \resumePOR{Other skills}{: Inventory Management, Event Management, Research \& development, Canva, Latex, Overleaf} \\
+    }
+ \end{itemize}
+ \vspace{-5mm}
+
+
+
+%-----------Positions of Responsibility-----------------
+\section{\textbf{\Large Positions of Responsibility}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Coordinator, } % Position
+    {The Technocrats club (IOT, Robotics, Blockchain)} %Club,Event
+    {Six Months} %Tenure Period
+\resumePOR{Chief Advisor, } % Position
+    {The Technocrats club (IOT, Robotics, Blockchain)} %Club,Event
+    {Six Months} %Tenure Period
+\resumePOR{Under Secretary General (Media), } % Position
+    {Model United Nations , IIITG} %Club,Event
+    {One Year} %Tenure Period
+\resumePOR{Coordinator, } % Position
+    {Marketing and Design Head, Sports board} %Club,Event
+    {Six Months}
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+%-----------details-----------------
+\section{\textbf{Personel details}}
+\vspace{-1mm}
+\resumeSubHeadingListStart
+\resumePOR{Present Address- } % Award
+    {14 mb street, Haddo, Port Blair, Andaman and Nicobar Islands - 744102} % Event
+     %Event Year
+    
+\resumePOR{Permanent Address- } % Award
+    { Pedda Veedhi, Karthalipalem, Srikakulam, Andhra Pradesh - 532264
+} % Event
+     %Event Year
+     
+\resumePOR{Fathers Name- } % Award
+    {Mallena Ramanayya}
+    
+\resumePOR{Mothers Name- } % Award
+    {Mallena Padma}
+    
+\resumePOR{Date of Birth- } % Award
+    {04 June 2005}
+    
+\resumePOR{Languages - } % Award
+    {Telugu, Hindi, English, German}
+    
+\resumeSubHeadingListEnd
+\vspace{-4.5mm}
+\setlength{\footskip}{4.08003pt}
+
+%-------------------------------------------
+\section{\textbf{Extra Curricular}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Hobbies} % Award
+    { Fishing, Hiking, Digital Poster Making, Watching Movies} 
+    
+    
+\resumePOR{Sports/Games} % Award
+    { Table Tennis, Volleyball, Badminton, Chess}
+
+\resumePOR{Musical Instruments} % Award
+    { Flute (intermediate)}
+    
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+\setlength{\footskip}{4.08003pt}
+\end{document}
